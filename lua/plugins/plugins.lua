@@ -10,6 +10,22 @@ return {
 			vim.cmd([[colorscheme tokyonight]])
 		end,
 	},
+	-- 中文分词插件
+	{
+		"noearc/jieba.nvim",
+		lazy = false,
+		dependencies = { "noearc/jieba-lua" },
+		config = function()
+			vim.keymap.set("n", "cw", ":lua require'jieba_nvim'.change_w()<CR>", { noremap = false, silent = true })
+			vim.keymap.set("n", "dw", ":lua require'jieba_nvim'.delete_w()<CR>", { noremap = false, silent = true })
+			vim.keymap.set(
+				"n",
+				"<leader>w",
+				":lua require'jieba_nvim'.select_w()<CR>",
+				{ noremap = false, silent = true }
+			)
+		end,
+	},
 	--DAP插件
 	{ require("plugins.dap.dap_init") },
 	-- 语法高亮插件
