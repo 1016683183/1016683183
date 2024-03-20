@@ -11,10 +11,10 @@ return {
 		opts = { initial_colorscheme = 'neohybrid' },
 	},
 
-	{ 'rafi/neo-hybrid.vim', priority = 100, lazy = false },
-	{ 'rafi/awesome-vim-colorschemes', lazy = false },
+	{ 'rafi/neo-hybrid.vim',             priority = 100,            lazy = false },
+	{ 'rafi/awesome-vim-colorschemes',   lazy = false },
 	{ 'AlexvZyl/nordic.nvim' },
-	{ 'folke/tokyonight.nvim', opts = { style = 'night' } },
+	{ 'folke/tokyonight.nvim',           opts = { style = 'storm' } },
 	{ 'rebelot/kanagawa.nvim' },
 	{ 'olimorris/onedarkpro.nvim' },
 	{ 'EdenEast/nightfox.nvim' },

@@ -1,15 +1,5 @@
 return {
 	-- 启用插件,并配置
-	-- 主题插件
-	{
-		"folke/tokyonight.nvim",
-		lazy = false, -- make sure we load this during startup if it is your main colorscheme
-		priority = 1000, -- make sure to load this before all the other start plugins
-		config = function()
-			-- load the colorscheme here
-			vim.cmd([[colorscheme tokyonight]])
-		end,
-	},
 	-- 中文分词插件
 	{
 		"noearc/jieba.nvim",
@@ -26,8 +16,11 @@ return {
 			)
 		end,
 	},
+	{ "nvim-neotest/nvim-nio"},
 	--DAP插件
 	{ require("plugins.dap.dap_init") },
+	-- markdown表格插件
+	{ "dhruvasagar/vim-table-mode",   lazy = false },
 	-- 语法高亮插件
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -52,8 +45,8 @@ return {
 				"jsonnet",
 				"lua",
 				"make",
-				--				"markdown",
-				--				"markdown_inline",
+				--"markdown",
+				"markdown_inline",
 				"python",
 				"verilog",
 				"vim",

@@ -5,13 +5,13 @@ return {
 
 	-----------------------------------------------------------------------------
 	-- Vimscript syntax/indent plugins
-	{ "iloginow/vim-stylus", ft = "stylus" },
-	{ "chrisbra/csv.vim", ft = "csv" },
+	{ "iloginow/vim-stylus",              ft = "stylus" },
+	{ "chrisbra/csv.vim",                 ft = "csv" },
 	{ "mustache/vim-mustache-handlebars", ft = { "mustache", "handlebars" } },
-	{ "lifepillar/pgsql.vim", ft = "pgsql" },
-	{ "MTDL9/vim-log-highlighting", ft = "log" },
-	{ "reasonml-editor/vim-reason-plus", ft = { "reason", "merlin" } },
-	{ "vmchale/just-vim", ft = "just" },
+	{ "lifepillar/pgsql.vim",             ft = "pgsql" },
+	{ "MTDL9/vim-log-highlighting",       ft = "log" },
+	{ "reasonml-editor/vim-reason-plus",  ft = { "reason", "merlin" } },
+	{ "vmchale/just-vim",                 ft = "just" },
 
 	-----------------------------------------------------------------------------
 	-- Nvim Treesitter configurations and abstraction layer
@@ -23,7 +23,7 @@ return {
 		cmd = { "TSInstall", "TSUpdate", "TSUpdateSync" },
 		keys = {
 			{ "v", desc = "Increment selection", mode = "x" },
-			{ "V", desc = "Shrink selection", mode = "x" },
+			{ "V", desc = "Shrink selection",    mode = "x" },
 		},
 		init = function(plugin)
 			-- PERF: add nvim-treesitter queries to the rtp and it's custom query predicates early
@@ -171,8 +171,8 @@ return {
 				"luadoc",
 				"luap",
 				"make",
-				--				"markdown",
-				--				"markdown_inline",
+				"markdown",
+				"markdown_inline",
 				"nix",
 				"perl",
 				"php",

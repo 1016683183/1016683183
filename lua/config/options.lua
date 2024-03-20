@@ -20,3 +20,6 @@ vim.cmd([[
 --相对行号显示
 vim.opt.relativenumber = true
 vim.opt.number = true
+
+--markdown删除拼写提示
+vim.api.nvim_command('autocmd FileType markdown setlocal spell spelllang=en_us,cjk')
